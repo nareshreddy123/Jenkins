@@ -11,11 +11,11 @@ pipelineJob('frontend-ci') {
                 }
                 'branches' {
                     'hudson.plugins.git.BranchSpec' {
-                        'name'('*/main')
+                        'name'('**/master')
                     }
                 }
             }
-            'scriptPath'('Jenkinsfile')
+            'scriptPath'('frontend/Jenkinsfile')
             'lightweight'(true)
         }
     }
@@ -34,11 +34,11 @@ pipelineJob('cart-ci') {
                 }
                 'branches' {
                     'hudson.plugins.git.BranchSpec' {
-                        'name'('*/main')
+                        'name'('**/master')
                     }
                 }
             }
-            'scriptPath'('Jenkinsfile')
+            'scriptPath'('cart/Jenkinsfile')
             'lightweight'(true)
         }
     }
@@ -55,11 +55,11 @@ pipelineJob('catalogue-ci') {
                 }
                 'branches' {
                     'hudson.plugins.git.BranchSpec' {
-                        'name'('*/main')
+                        'name'('**/master')
                     }
                 }
             }
-            'scriptPath'('Jenkinsfile')
+            'scriptPath'('catalogue/Jenkinsfile')
             'lightweight'(true)
         }
     }
