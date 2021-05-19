@@ -11,7 +11,7 @@ pipelineJob('frontend-ci') {
                 }
                 'branches' {
                     'hudson.plugins.git.BranchSpec' {
-                        'name'('**/master')
+                        'name'('*/master')
                     }
                 }
             }
@@ -34,7 +34,7 @@ pipelineJob('cart-ci') {
                 }
                 'branches' {
                     'hudson.plugins.git.BranchSpec' {
-                        'name'('**/master')
+                        'name'('*/master')
                     }
                 }
             }
@@ -55,7 +55,7 @@ pipelineJob('catalogue-ci') {
                 }
                 'branches' {
                     'hudson.plugins.git.BranchSpec' {
-                        'name'('**/master')
+                        'name'('*/master')
                     }
                 }
             }
@@ -76,11 +76,11 @@ pipelineJob('user-ci') {
                 }
                 'branches' {
                     'hudson.plugins.git.BranchSpec' {
-                        'name'('*/main')
+                        'name'('*/master')
                     }
                 }
             }
-            'scriptPath'('Jenkinsfile')
+            'scriptPath'('user/Jenkinsfile')
             'lightweight'(true)
         }
     }
@@ -97,11 +97,11 @@ pipelineJob('payment-ci') {
                 }
                 'branches' {
                     'hudson.plugins.git.BranchSpec' {
-                        'name'('*/main')
+                        'name'('*/master')
                     }
                 }
             }
-            'scriptPath'('Jenkinsfile')
+            'scriptPath'('payment/Jenkinsfile')
             'lightweight'(true)
         }
     }
@@ -118,11 +118,11 @@ pipelineJob('shipping-ci') {
                 }
                 'branches' {
                     'hudson.plugins.git.BranchSpec' {
-                        'name'('*/main')
+                        'name'('*/master')
                     }
                 }
             }
-            'scriptPath'('Jenkinsfile')
+            'scriptPath'('shipping/Jenkinsfile')
             'lightweight'(true)
         }
     }
@@ -139,7 +139,7 @@ pipelineJob('CreateRelease') {
                 }
                 'branches' {
                     'hudson.plugins.git.BranchSpec' {
-                        'name'('*/main')
+                        'name'('*/master')
                     }
                 }
             }
