@@ -2,7 +2,7 @@ def call(String component) {
     pipeline {
         agent {
             node {
-                label 'workstation'
+                label 'work'
             }
         }
 
