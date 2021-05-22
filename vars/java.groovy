@@ -20,3 +20,8 @@ def call(String component) {
 
     }
 }
+           stage('Build Code') {
+               steps {
+                 sh 'mvn package'
+    }
+}
