@@ -12,14 +12,7 @@ def call(String component) {
                     }
         }
     }
-
 }
 
 
-         stage('Sonar Scan') {
-       steps {
-          script {
-          sonar.scan(component)
-          }
-       }
-         }
+
