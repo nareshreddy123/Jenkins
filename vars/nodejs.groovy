@@ -1,4 +1,4 @@
-
+def call(String component) {
     pipeline {
         agent any
 
@@ -14,5 +14,5 @@
     }
 
 
-
+}
 
