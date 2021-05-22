@@ -10,11 +10,7 @@ def call(String component) {
                                     sh 'npm install'
                                 }
                     }
-        }
-    }
 
-
-}
           stage('Sonar Scan') {
               steps {
                   script {
@@ -22,3 +18,8 @@ def call(String component) {
         }
        }
      }
+}
+}
+
+
+}
