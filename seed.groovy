@@ -6,7 +6,7 @@ pipelineJob('frontend-ci') {
             'scm'(class:'hudson.plugins.git.GitSCM',plugin:'git') {
                 'userRemoteConfigs' {
                     'hudson.plugins.git.UserRemoteConfig' {
-                        'url'('https://github.com/nareshreddy123/devopsnaresh.git')
+                        'url'('https://github.com/nareshreddy123/nareshdev.git')
                     }
                 }
                 'branches' {
@@ -29,7 +29,7 @@ pipelineJob('cart-ci') {
             'scm'(class:'hudson.plugins.git.GitSCM',plugin:'git') {
                 'userRemoteConfigs' {
                     'hudson.plugins.git.UserRemoteConfig' {
-                        'url'('https://github.com/nareshreddy123/devopsnaresh.git')
+                        'url'('https://github.com/nareshreddy123/nareshdev.git')
                     }
                 }
                 'branches' {
@@ -50,7 +50,7 @@ pipelineJob('catalogue-ci') {
             'scm'(class:'hudson.plugins.git.GitSCM',plugin:'git') {
                 'userRemoteConfigs' {
                     'hudson.plugins.git.UserRemoteConfig' {
-                        'url'('https://github.com/nareshreddy123/devopsnaresh.git')
+                        'url'('https://github.com/nareshreddy123/nareshdev.git')
                     }
                 }
                 'branches' {
@@ -71,7 +71,7 @@ pipelineJob('user-ci') {
             'scm'(class:'hudson.plugins.git.GitSCM',plugin:'git') {
                 'userRemoteConfigs' {
                     'hudson.plugins.git.UserRemoteConfig' {
-                        'url'('https://github.com/nareshreddy123/devopsnaresh.git')
+                        'url'('https://github.com/nareshreddy123/nareshdev.git')
                     }
                 }
                 'branches' {
@@ -92,7 +92,7 @@ pipelineJob('payment-ci') {
             'scm'(class:'hudson.plugins.git.GitSCM',plugin:'git') {
                 'userRemoteConfigs' {
                     'hudson.plugins.git.UserRemoteConfig' {
-                        'url'('https://github.com/nareshreddy123/devopsnaresh.git')
+                        'url'('https://github.com/nareshreddy123/nareshdev.git')
                     }
                 }
                 'branches' {
@@ -113,7 +113,7 @@ pipelineJob('shipping-ci') {
             'scm'(class:'hudson.plugins.git.GitSCM',plugin:'git') {
                 'userRemoteConfigs' {
                     'hudson.plugins.git.UserRemoteConfig' {
-                        'url'('https://github.com/nareshreddy123/devopsnaresh.git')
+                        'url'('https://github.com/nareshreddy123/nareshdev.git')
                     }
                 }
                 'branches' {
@@ -134,7 +134,7 @@ pipelineJob('CreateRelease') {
             'scm'(class:'hudson.plugins.git.GitSCM',plugin:'git') {
                 'userRemoteConfigs' {
                     'hudson.plugins.git.UserRemoteConfig' {
-                        'url'('https://github.com/nareshreddy123/devopsnaresh.git')
+                        'url'('https://github.com/nareshreddy123/nareshdev.git')
                     }
                 }
                 'branches' {
@@ -155,7 +155,7 @@ pipelineJob('ReleasePipeline') {
             'scm'(class:'hudson.plugins.git.GitSCM',plugin:'git') {
                 'userRemoteConfigs' {
                     'hudson.plugins.git.UserRemoteConfig' {
-                        'url'('https://github.com/nareshreddy123/devopsnaresh.git')
+                        'url'('https://github.com/nareshreddy123/nareshdev.git')
                     }
                 }
                 'branches' {
