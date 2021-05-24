@@ -1,4 +1,5 @@
 def scan(component) {
-    sh "sonar-scanner.bat -D\"sonar.projectKey=devops\" -D\"sonar.sources=.\" -D\"sonar.host.url=http://3.239.7.29:9000\" -D\"sonar.login=df35dbed12e7ef47a2dcb204507ad23d26f6e3b5\""
+    sh "sonar-scanner -Dsonar.projectKey=${component} -Dsonar.sources=. -Dsonar.host.url=http://3.239.7.29:9000" +
+            "-Dsonar.login=a694a65206d41683c5d3f0ac83a6e518fadebd4a"
 
 }
