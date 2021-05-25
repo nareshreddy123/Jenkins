@@ -16,12 +16,13 @@ def call(String component) {
             }
 
 
-        }
-
-    }
-}
-           stage('Build Code') {
+        stage('Build Code') {
                steps {
                  sh 'mvn package'
     }
+}
+
+}
+
+}
 }
