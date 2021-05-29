@@ -1,4 +1,4 @@
 def scan(component) {
 //    sh 'sonar-scanner -Dsonar' '.projectKey=${component}' 'Dsonar.sources=.' '-Dsonar.host.url=http://3.236.21.181:9000 -Dsonar.login=298e4100451f7c46ec8393a40388271883b3e455'
-sh " sonar-scanner -Dsonar.projectKey=${component} -Dsonar.sources=. -Dsonar.host.url=http://3.236.21.181:9000 -Dsonar.login=32302ee0edae4823de169a68b6890cb65b3cbd22"
+sh " sonar-scanner -Dsonar.projectKey=cart -Dsonar.sources=. -Dsonar.host.url=http://3.236.21.181:9000 -Dsonar.login=4c74445d6f0232091da066dd3be902b418fdd436"
 }
