@@ -23,3 +23,12 @@ def call(String component) {
 
 
 }
+stage('Sonar Quality Gate Status') {
+      steps {
+          catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+         script {
+             sonar.report(component)
+          }
+         }
+      }
+}

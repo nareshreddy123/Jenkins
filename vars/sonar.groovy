@@ -6,3 +6,9 @@ sh "sonar-scanner " +
         "  -Dsonar.host.url=http://3.236.21.181:9000 " +
         "  -Dsonar.login=8ad6674d77f1f9e3c4be53daa4705d321a9d0b0c"
 }
+
+
+
+def report(component) {
+    sh "sonar-quality-gate.sh admin admin123 3.236.21.181 ${component}"
+}
