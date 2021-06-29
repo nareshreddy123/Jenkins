@@ -15,6 +15,13 @@ def call(String component) {
                 }
 
             }
+            stage('Sonar Scan') {
+                steps {
+                    script {
+                        sonar.scan(component)
+                    }
+                }
+            }
 
 
         stage('Build Code') {
@@ -28,10 +35,3 @@ def call(String component) {
 }
 }
 
-     stage('Sonar Scan') {
-       steps {
-         script {
-           sonar.scan(component)
-           }
-       }
-      }
