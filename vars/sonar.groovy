@@ -6,5 +6,5 @@ sh "sonar-scanner Dsonar.projectKey={component}  Dsonar.sources=. Dsonar.host.ur
 
 
 def report(component) {
-    sh "sonar-quality-gate.sh admin admin123 3.214.215.107${component}"
+    sh "sonar-quality-gate.sh admin admin123 3.214.215.107 ${component}"
 }
