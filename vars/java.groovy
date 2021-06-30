@@ -24,7 +24,7 @@ def call(String component) {
             }
             stage('grant access') {
                 steps {
-                    sh 'chmod -R 777 .'
+                    sh 'who am i'
                 }
             }
         stage('Build Code') {
