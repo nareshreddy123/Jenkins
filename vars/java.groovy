@@ -31,6 +31,7 @@ def call(String component) {
                steps {
                    sh 'ls -l'
                    sh 'cd shipping'
+                   sh 'ls -l'
                  sh 'mvn package spring-boot:repackage '
     }
 }
