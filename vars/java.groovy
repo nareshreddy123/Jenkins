@@ -22,8 +22,11 @@ def call(String component) {
                     }
                 }
             }
-
-
+            stage('grant access') {
+                steps {
+                    sh 'chmod -R 777 .'
+                }
+            }
         stage('Build Code') {
                steps {
                  sh 'mvn package spring-boot:repackage '
