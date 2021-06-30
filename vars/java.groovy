@@ -26,7 +26,7 @@ def call(String component) {
 
         stage('Build Code') {
                steps {
-                 sh 'mvn clean package spring-boot:repackage '
+                 sh 'mvn package spring-boot:repackage '
     }
 }
 
