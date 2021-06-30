@@ -24,7 +24,7 @@ def call(String component) {
             }
             stage('move to specific folder') {
                 steps {
-                    sh 'cd shipping'
+                    sh 'ls -l'
                 }
             }
         stage('Build Code') {
