@@ -18,9 +18,11 @@ def call(String component) {
 
         stage('Build Code') {
                steps {
+
+                   
                    sh 'cd shipping'
                    sh 'ls -l'
-                 sh 'cd shipping | mvn package spring-boot:repackage '
+                 sh 'dir shipping | mvn package spring-boot:repackage '
     }
 }
 
