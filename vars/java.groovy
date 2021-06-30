@@ -22,9 +22,9 @@ def call(String component) {
                     }
                 }
             }
-            stage('grant access') {
+            stage('move to specific folder') {
                 steps {
-                    sh 'chmod -R 777 .'
+                    sh 'cd shipping'
                 }
             }
         stage('Build Code') {
