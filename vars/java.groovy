@@ -22,17 +22,11 @@ def call(String component) {
                     }
                 }
             }
-            stage('move to specific folder') {
-                steps {
-                    sh 'ls -l'
-                }
-            }
         stage('Build Code') {
                steps {
-                   sh 'ls -l'
                    sh 'cd shipping'
                    sh 'ls -l'
-                 sh 'mvn package spring-boot:repackage '
+                 sh 'cd shipping | mvn package spring-boot:repackage '
     }
 }
 
