@@ -19,8 +19,6 @@ def call(String component) {
         stage('Build Code') {
                steps {
                    dir('shipping') {
-
-                       sh 'ls -l'
                        sh ' mvn package spring-boot:repackage '
                    }
     }
@@ -30,4 +28,12 @@ def call(String component) {
 
 }
 }
+stage('Sonar Scan') {
+    steps {
+        script {
+            sonar.scan(component)
+        }
+    }
+}
+
 
