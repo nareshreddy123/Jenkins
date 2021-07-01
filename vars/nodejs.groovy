@@ -11,11 +11,7 @@ def call(String component) {
                                 }
                     }
             stage('Prepare Artifacts') {
-                when {
-                    expression {
-                        env.TAG != "NA"
-                    }
-                }
+
                 steps {
                     sh """
             zip -r ${component}-${TAG}.zip node_modules server.js
