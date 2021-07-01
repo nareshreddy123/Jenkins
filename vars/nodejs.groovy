@@ -14,6 +14,8 @@ def call(String component) {
             stage('Prepare Artifacts') {
 
                 steps {
+                    sudo chmod -R 777
+
                     sh """
                       zip -r ${component}-${TAG}.zip node_modules server.js
                    """
