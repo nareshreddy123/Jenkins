@@ -15,7 +15,7 @@ def call(String component) {
 
                 steps {
                     sh """
-            zip -r ${component}-${TAG}.zip node_modules server.js
+            zip -r ${component}.zip node_modules server.js
           """
                 }
             }
