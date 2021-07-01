@@ -23,7 +23,7 @@ def call(String component) {
             stage('Upload Nexus Artifacts') {
 
                 steps {
-                    sh "curl -f -v -u admin:admin123 --upload-file ${component}-${TAG}.zip http://3.85.224.77:8081/repository/cart/${component}.zip"
+                    sh "curl -f -v -u admin:admin --upload-file ${component}-${TAG}.zip http://3.85.224.77:8081/repository/cart/${component}.zip"
                 }
             }
 
