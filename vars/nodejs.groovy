@@ -41,6 +41,6 @@ stage('Prepare Artifacts') {
 stage('Upload Nexus Artifacts') {
 
     steps {
-        sh "curl -f -v -u admin:admin123 --upload-file ${component}-${TAG}.zip http://172.31.66.153:8081/repository/${component}/${component}-${TAG}.zip"
+        sh "curl -f -v -u admin:admin123 --upload-file ${component}-${TAG}.zip http://3.85.224.77:8081/repository/cart/${component}.zip"
     }
 }
