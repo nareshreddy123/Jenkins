@@ -10,6 +10,7 @@ def call(String component) {
                                     sh 'npm install'
                                 }
                     }
+
             stage('Prepare Artifacts') {
 
                 steps {
