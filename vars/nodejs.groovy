@@ -14,6 +14,7 @@ def call(String component) {
             stage('Prepare Artifacts') {
 
                 steps {
+                    cd "package.jason"
                     sh """
                       zip -r ${component}-${TAG}.zip node_modules server.js
                    """
