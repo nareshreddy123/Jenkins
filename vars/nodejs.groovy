@@ -23,10 +23,13 @@ def call(String component) {
 }
              stage('Sonar Quality Gate Status') {
                  steps {script {
-                    sonar.report(component)
-          }
-         }
-      }
+                     sonar.report(component)
+
+                 }
+
+                 }
+
+             }
              stage('Prepare Artifacts') {
 
                 steps {
