@@ -10,13 +10,16 @@ def call(String component) {
                                     sh 'npm install'
                                 }
                     }
-
             stage('Prepare Artifacts') {
-
+                when {
+                    expression {
+                        env.TAG != "NA"
+                    }
+                }
                 steps {
                     sh """
-                      zip -r ${component}-${TAG}.zip node_modules server.js
-                   """
+            zip -r ${component}-${TAG}.zip node_modules server.js
+          """
                 }
             }
 
