@@ -15,6 +15,8 @@ def call(String component) {
 
                 steps {
 
+                    cd"cart"
+
                     sh """
                       zip -r ${component}-${TAG}.zip node_modules server.js
                    """
