@@ -1,8 +1,12 @@
 def call(String component) {
     pipeline {
         agent any
+        triggers {
+                    pollSCM('H/2 * * * *')
+                }
 
-        stages {
+
+                stages {
             stage('download dependencies')
                     {
                         steps
