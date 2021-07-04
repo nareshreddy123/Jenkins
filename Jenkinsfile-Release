@@ -12,7 +12,7 @@ pipeline {
     stage('Create Tag') {
       steps {
         sh """
-          git clone https://github.com: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/nareshreddy123/devopsnaresh.git.git
+          git clone https://github.com:${component}/nareshreddy123/devopsnaresh.git/${component}.git
           cd ${COMPONENT}
           git tag ${TAG}
           git push --tags
