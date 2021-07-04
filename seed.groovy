@@ -134,12 +134,12 @@ pipelineJob('CreateRelease') {
             'scm'(class:'hudson.plugins.git.GitSCM',plugin:'git') {
                 'userRemoteConfigs' {
                     'hudson.plugins.git.UserRemoteConfig' {
-                        'url'('https://github.com/nareshreddy123/devopsnaresh.git')
+                        'url'('https://github.com/nareshreddy123/Jenkins.git')
                     }
                 }
                 'branches' {
                     'hudson.plugins.git.BranchSpec' {
-                        'name'('*/master')
+                        'name'('*/main')
                     }
                 }
             }
