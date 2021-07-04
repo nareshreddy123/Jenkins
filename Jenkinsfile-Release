@@ -4,7 +4,7 @@ pipeline {
     parameters {
     string(name: 'COMPONENT', defaultValue: '', description: 'Which Component you would like to release?')
     string(name: 'TAG', defaultValue: '', description: 'Release Number')
-    password(name: 'TOKEN', defaultValue: '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', description: 'Token')
+    password(name: 'TOKEN', defaultValue: 'wk3beq6hjvqzb6rqd5ztfca6xtr2undvcils6j4hlccdnd5o6n4a', description: 'Token')
   }
 
   stages {
@@ -12,8 +12,7 @@ pipeline {
     stage('Create Tag') {
       steps {
         sh """
-          git clone https://github.com/nareshreddy123/Jenkins.git
-          cd ${COMPONENT}
+          git clone https://DevOps-Batches:${TOKEN}@dev.azure.com/DevOps-Batches/DevOps54/_git/${COMPONENT}.git
           git tag ${TAG}
           git push --tags
         """
