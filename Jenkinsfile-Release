@@ -4,7 +4,7 @@ pipeline {
     parameters {
     string(name: 'COMPONENT', defaultValue: '', description: 'Which Component you would like to release?')
     string(name: 'TAG', defaultValue: '', description: 'Release Number')
-    password(name: 'TOKEN', defaultValue: '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', description: 'Token')
+    password(name: 'TOKEN', defaultValue: 'y5lelqfwaaoqhmia4hpc5pspbnhmdb2nso662h2nm7cgtn6rzwoa', description: 'Token')
   }
 
   stages {
@@ -12,7 +12,7 @@ pipeline {
     stage('Create Tag') {
       steps {
         sh """
-           git clone https://${TOKEN}@github.com/nareshreddy123/repo.git/${COMPONENT}.git
+           git clone https://nareshreddyboreddy904:${TOKEN}@dev.azure.com/nareshreddyboreddy904/Naresh%20devops/_git/devopsnaresh.git
           git tag ${TAG}
           git push --tags
         """
