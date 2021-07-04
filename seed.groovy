@@ -143,7 +143,7 @@ pipelineJob('CreateRelease') {
                     }
                 }
             }
-            'scriptPath'('Jenkinsfile-CreateRelease')
+            'scriptPath'('jenkins-createfile')
             'lightweight'(true)
         }
     }
