@@ -130,8 +130,8 @@ pipelineJob('shipping-ci') {
 
 pipelineJob('CreateRelease') {
     configure { flowdefinition ->
-        flowdefinition << delegate.'definition'(class:'org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition',plugin:'workflow-cps') {
-            'scm'(class:'hudson.plugins.git.GitSCM',plugin:'git') {
+        flowdefinition << delegate.'definition'(class: 'org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition', plugin: 'workflow-cps') {
+            'scm'(class: 'hudson.plugins.git.GitSCM', plugin: 'git') {
                 'userRemoteConfigs' {
                     'hudson.plugins.git.UserRemoteConfig' {
                         'url'('https://github.com/nareshreddy123/Jenkins.git')
@@ -147,6 +147,7 @@ pipelineJob('CreateRelease') {
             'lightweight'(true)
         }
     }
+
 }
 
 pipelineJob('ReleasePipeline') {
