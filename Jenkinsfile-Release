@@ -4,7 +4,7 @@ pipeline {
     parameters {
     string(name: 'COMPONENT', defaultValue: '', description: 'Which Component you would like to release?')
     string(name: 'TAG', defaultValue: '', description: 'Release Number')
-    password(name: 'TOKEN', defaultValue: 'wk3beq6hjvqzb6rqd5ztfca6xtr2undvcils6j4hlccdnd5o6n4a', description: 'Token')
+    password(name: 'TOKEN', defaultValue: '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', description: 'Token')
   }
 
   stages {
