@@ -1,0 +1,30 @@
+pipeline {
+  agent any
+
+    parameters {
+    string(name: 'COMPONENT', defaultValue: '', description: 'Which Component you would like to release?')
+    string(name: 'TAG', defaultValue: '', description: 'Release Number')
+    password(name: 'TOKEN', defaultValue: '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', description: 'Token')
+  }
+
+  stages {
+
+    stage('Create Tag') {
+      steps {
+        sh """
+          git clone https://github.com/nareshreddy123/devopsnaresh.git.git
+          cd ${COMPONENT}
+          git tag ${TAG}
+          git push --tags
+        """
+      }
+    }
+
+    stage('Trigger CI for release') {
+      steps {
+        build wait: false, job: "${COMPONENT}-ci", parameters: [string(name: 'TAG', value: "${TAG}")]
+      }
+    }
+
+  }
+
